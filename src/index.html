@@ -1,0 +1,67 @@
+<!--
+* File: index.html
+* Author: Zsiga Gergely
+* Copyright: 2023, Zsiga Gergely
+* Group: Szoft1/2/E
+* Date: 20230608
+* Github: https://github.com/zsi-ga/med.git
+* Licenc: GNU GPL
+-->
+
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medence térfogat számitása</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Medence</h1>
+        <h2>Medence téfogat számitása (adatok méterben)</h2>
+
+        <div class="indexForm">
+            <div class="mt-3">
+                <label for="height"
+                class="form-label">Magasság</label>
+                <input type="text"
+                class="form-control"
+                id="height">
+            </div>
+            <div class="mt-3">
+                <label for="width"
+                class="form-label">Szélesség</label>
+                <input type="text"
+                class="form-control"
+                id="width">
+            </div>
+            <div class="mt-3">
+                <label for="length"
+                class="form-label">Hossz</label>
+                <input type="text"
+                class="form-control"
+                id="length">
+            </div>
+            <div class="mt-3">
+                <button id="calcButton"
+                class="btn btn-primary">Számít</button>
+            </div>
+            <div class="mt-3">
+                <label for="volume"
+                class="form-label">Víz mennyisége, ha felülről 10 cm nem tölthető fel (m3)</label>
+                <input type="text"
+                class="form-control"
+                id="volume">
+            </div>            
+        </div>
+    </div>
+
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
