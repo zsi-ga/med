@@ -1,11 +1,11 @@
 
-/*
+/*Feladat:0364
 * File: app.js
 * Author: Zsiga Gergely
 * Copyright: 2023, Zsiga Gergely
-* Group: Szoft1/2/E
+* Group: Szoft-1/2/E
 * Date: 20230608
-* Github: https://github.com/zsi-ga/med.git
+* Github: 
 * Licenc: GNU GPL
 */
 
@@ -39,9 +39,9 @@ function startCalc(){
     let height = doc.heightInput.value;
     let width = doc.widthInput.value;
     let length = doc.lengthInput.value;
-    console.log("Magasság nagyobb mint 0: ", checkInput(height));
-    console.log("Szélesség nagyobb mint 0: ", checkInput(width));
-    console.log("Hosszúság nagyobb mint 0: ", checkInput(length));
+    console.log("Magasság 0 nagyobb: ", checkInput(height));
+    console.log("Szélesség 0 nagyobb: ", checkInput(width));
+    console.log("Hosszúság 0 nagyobb: ", checkInput(length));
     if (checkInput(height) && checkInput(width) && checkInput(length)){
         state.volume = calcVolume(height, width, length);
         doc.volumeInput.value = state.volume;
