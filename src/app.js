@@ -39,9 +39,9 @@ function startCalc(){
     let height = doc.heightInput.value;
     let width = doc.widthInput.value;
     let length = doc.lengthInput.value;
-    console.log("Magasság 0-nál nagyobb szám: ", checkInput(height));
-    console.log("Szélesség 0-nál nagyobb szám: ", checkInput(width));
-    console.log("Hosszúság 0-nál nagyobb szám: ", checkInput(length));
+    console.log("Magasság nagyobb mint 0: ", checkInput(height));
+    console.log("Szélesség nagyobb mint 0: ", checkInput(width));
+    console.log("Hosszúság nagyobb mint 0: ", checkInput(length));
     if (checkInput(height) && checkInput(width) && checkInput(length)){
         state.volume = calcVolume(height, width, length);
         doc.volumeInput.value = state.volume;
